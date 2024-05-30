@@ -10,28 +10,28 @@ font_family <- "Roboto"
 #' This specifies the background color of the chart area.
 #'
 #' @export
-bgColor <- "#2f2f2f"
+bgColor <- "white"
 
 #' Font color for text elements
 #'
 #' This specifies the color of the text elements such as titles, axes labels, and legends.
 #'
 #' @export
-color_font <- "white"
+color_font <- "#333"
 
 #' Font size for titles
 #'
 #' This specifies the font size of the chart titles.
 #'
 #' @export
-title_font_size <- "20px"
+title_font_size <- "22px"
 
 #' Font size for y-axis labels
 #'
 #' This specifies the font size of the y-axis labels.
 #'
 #' @export
-y_axis_font_size <- "14px"
+y_axis_font_size <- "15px"
 
 #' Font size for x-axis labels
 #'
@@ -40,45 +40,6 @@ y_axis_font_size <- "14px"
 #' @export
 x_axis_font_size <- y_axis_font_size
 
-#' Font color for legend item style
-#'
-#' This specifies the font color for legend items.
-#'
-#' @export
-legend_itemstyle_font_color <- "grey"
-
-#' Font color for hidden legend items
-#'
-#' This specifies the font color for legend items when they are hidden.
-#'
-#' @export
-legend_itemhiddenstyle_font_color <- '#606063'
-
-#' Active axis label style
-#'
-#' This specifies the style for active axis labels.
-#'
-#' @export
-active_axis_label_style <- "white"
-
-#' Get legend list
-#'
-#' This function returns a list of styles for legends.
-#'
-#' @export
-get_legend_list <- function() {
-  list(
-    itemStyle = list(
-      fontFamily = font_family,
-      color = legend_itemstyle_font_color
-    ),
-    itemHoverStyle = list(color = color_font),
-    itemHiddenStyle = list(
-      fontFamily = font_family,
-      color = legend_itemhiddenstyle_font_color
-    )
-  )
-}
 
 #' Style for y-axis labels
 #'

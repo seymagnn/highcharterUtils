@@ -4,25 +4,30 @@ box::use(
 
 #' Tile theme for Highcharter charts
 #'
-#' This theme provides a customized appearance for Highcharter charts suitable for tile maps.
+#' This theme provides a customized appearance for Highcharter charts.
 #'
 #' @export
-tile_theme <- function() {
-  highcharter$hc_theme(
+custom_theme <- function() {
+  highcharter::hc_theme(
     thousandsSep = '*',
-    colors = custom_colors,
+    colors = soft_colors,
     chart = list(
       backgroundColor = bgColor
     ),
     xAxis = list(
       labels = list(
-        style = hc_x_style
+        style =  hc_x_style
       )
     ),
     yAxis = list(
       labels = list(
         style = hc_y_style
       )
+    ),
+    tooltip = list(
+      shared = TRUE,
+      useHTML = TRUE,
+      formatter = format_tooltip()
     ),
     title = list(
       style = hc_title_style
@@ -39,7 +44,7 @@ tile_theme <- function() {
 #' This theme provides a customized appearance for Highcharter charts with double lines.
 #'
 #' @export
-double_line_theme <- function() {
+line_theme <- function() {
   highcharter$hc_theme(
     thousandsSep = '*',
     colors = custom_colors,
