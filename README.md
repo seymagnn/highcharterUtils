@@ -10,7 +10,7 @@ To install the package, first clone the repository and then install it within R:
 install.packages("devtools")
 
 # Install the highcharterUtils package
-devtools::install_github("highcharterUtils")
+devtools::install_github("seymagnn/highcharterUtils")
 ```
 
 # Usage
