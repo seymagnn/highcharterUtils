@@ -67,5 +67,9 @@ highchart() %>%
 
 ```
 
+https://github.com/seymagnn/highcharterUtils/assets/80623252/895681cb-d2b9-437c-becb-7d09eef9724e
+
+
+
 # Contributing
 If you would like to contribute, please submit a pull request or open an issue. I appreciate all feedback and contributions.
