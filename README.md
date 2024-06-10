@@ -27,6 +27,10 @@ Rounding Functions: Round your numerical data to specified digits.
 Below is an example of how to use the highcharterUtils package:
 
 ```
+
+library(highcharter)
+library(highcharterUtils)
+
 # Sample data creation
 companies <- c("Apple", "Google", "Amazon")
 start_date <- as.Date("2024-01-01")
@@ -67,9 +71,7 @@ highchart() %>%
 
 ```
 
-
-
-![](https://github.com/seymagnn/highcharterUtils/assets/80623252/895681cb-d2b9-437c-becb-7d09eef9724e)
+https://github.com/seymagnn/highcharterUtils/assets/80623252/895681cb-d2b9-437c-becb-7d09eef9724e
 
 
 # Contributing
