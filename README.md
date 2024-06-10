@@ -22,19 +22,19 @@ The highcharterUtils package allows you to easily customize the appearance and s
 ### Theme Functions
 Customize the style of your charts.
 
-custom_theme(): Creates a generic theme using the styles from the styles.R script.
+`custom_theme()`: Creates a generic theme using the styles from the styles.R script.
 
 ### Color Functions
 Provides predefined color palettes for use in your charts. These palettes provide custom colors that can be used for chart elements such as series, backgrounds, or legends.
 
-custom_colors(): Regular color palette.
-soft_colors(): Specifically designed for drilldown charts.
-circle_colors(): Allow you to use in charts like pie chart
+`custom_colors()`: Regular color palette.
+`soft_colors()`: Specifically designed for drilldown charts.
+`circle_colors()`: Allows you to use in charts like a pie chart
 
 ### Rounding Functions
 Rounds your numerical data to specified digits.
 
-format_tooltip(): Rounds the values in the data to the specified number of digits and separates between thousands, millions, and billions.
+`format_tooltip()`: Rounds the values in the data to the specified number of digits and separates between thousands, millions, and billions.
 
 ## Example Usage:
 Below is an example of how to use the highcharterUtils package:
