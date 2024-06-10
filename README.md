@@ -67,8 +67,9 @@ highchart() %>%
 
 ```
 
-https://github.com/seymagnn/highcharterUtils/assets/80623252/895681cb-d2b9-437c-becb-7d09eef9724e
 
+
+![Kullanım Örneği](https://github.com/seymagnn/highcharterUtils/assets/80623252/895681cb-d2b9-437c-becb-7d09eef9724e)
 
 
 # Contributing
