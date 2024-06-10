@@ -12,3 +12,60 @@ install.packages("devtools")
 # Install the highcharterUtils package
 devtools::install_github("highcharterUtils")
 ```
+
+# Usage
+
+The highcharterUtils package allows you to easily customize the appearance and style of your charts when using highcharter. The package includes various theme and color functions, as well as helper functions for rounding numerical data.
+
+## Functions
+
+Theme Functions: Customize the style of your charts.
+Color Functions: Provide predefined color palettes for use in your charts.
+Rounding Functions: Round your numerical data to specified digits.
+
+## Example Usage:
+Below is an example of how to use the highcharterUtils package:
+
+```
+# Sample data creation
+companies <- c("Apple", "Google", "Amazon")
+start_date <- as.Date("2024-01-01")
+end_date <- as.Date("2024-05-31")
+dates <- seq(start_date, end_date, by = "month")
+dates <- format(dates, "%Y-%m-%d")
+
+# Generate random index values
+set.seed(42)  # Set seed for reproducibility
+data <- expand.grid(date = dates, company = companies)
+data$value <- rnorm(nrow(data), mean = 100, sd = 10)
+data$value <- data$value * 100000
+
+# Create Highcharter line chart
+highchart() %>%
+  hc_title(text = "Company Index Values") %>%
+  hc_xAxis(categories = unique(data$date), title = list(text = "Date")) %>%
+  hc_yAxis(title = list(text = "Index Value")) %>%
+  hc_add_series(
+    data = subset(data, company == "Apple"),
+    type = "line",
+    hcaes(x = date, y = value),
+    name = "Apple"
+  ) %>%
+  hc_add_series(
+    data = subset(data, company == "Google"),
+    type = "line",
+    hcaes(x = date, y = value),
+    name = "Google"
+  ) %>%
+  hc_add_series(
+    data = subset(data, company == "Amazon"),
+    type = "line",
+    hcaes(x = date, y = value),
+    name = "Amazon"
+  ) %>%
+  hc_add_theme(custom_theme())
+
+```
+
+# Contributing
+If you would like to contribute, please submit a pull request or open an issue. I appreciate all feedback and contributions.
