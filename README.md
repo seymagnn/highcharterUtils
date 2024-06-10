@@ -27,9 +27,9 @@ Customize the style of your charts.
 ### Color Functions
 Provides predefined color palettes for use in your charts. These palettes provide custom colors that can be used for chart elements such as series, backgrounds, or legends.
 
-`custom_colors()`: Regular color palette.
-`soft_colors()`: Specifically designed for drilldown charts.
-`circle_colors()`: Allows you to use in charts like a pie chart
+- `custom_colors()`: Regular color palette.
+- `soft_colors()`: Specifically designed for drilldown charts.
+- `circle_colors()`: Allows you to use in charts like a pie chart
 
 ### Rounding Functions
 Rounds your numerical data to specified digits.
